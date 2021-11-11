@@ -116,7 +116,7 @@ abstract class AppBaseViewModel : ViewModel() {
         }
     }
 
-    private fun errorDialog(optString: String, title: String = context!!.getString(R.string.app_name)) {
+    private fun errorDialog(optString: String, title: String = "Alert") {
 //        toastError(optString)
         context!!.alert(optString, title) { okButton { } }.build().show()
     }

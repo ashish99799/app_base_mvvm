@@ -4,6 +4,7 @@ import android.widget.Filter
 import android.widget.Filterable
 import androidx.viewbinding.ViewBinding
 
+// M | VB => Template types
 abstract class AppBaseFilterAdapter<M, VB : ViewBinding>() : AppBaseAdapter<M, VB>(), Filterable {
 
     val mainList = ArrayList<M>()

@@ -1,6 +1,6 @@
 package com.application.base
 
-import com.application.base.databinding.ActivityMainBinding
+/*import com.application.base.databinding.ActivityMainBinding
 
 class MainActivity : AppBaseActivity<ActivityMainBinding, MainActivityViewModel>() {
 
@@ -15,4 +15,4 @@ class MainActivity : AppBaseActivity<ActivityMainBinding, MainActivityViewModel>
     override fun initOnClick() {
 
     }
-}
+}*/

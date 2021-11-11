@@ -9,7 +9,7 @@ import androidx.lifecycle.ViewModelProvider
 import androidx.viewbinding.ViewBinding
 
 // VB | VM => Template types
-abstract class AppBaseActivity<VB : ViewBinding, VM : AppBaseViewModel>(val setLanguage: Boolean? = false) : AppCompatActivity() {
+abstract class AppBaseActivity<VB : ViewBinding, VM : AppBaseViewModel>(private val setLanguage: Boolean? = false) : AppCompatActivity() {
 
     lateinit var binding: VB
     abstract fun setViewBinding(): VB
@@ -39,10 +39,10 @@ abstract class AppBaseActivity<VB : ViewBinding, VM : AppBaseViewModel>(val setL
     }*/
 
     override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
         if (setLanguage == true) {
             bindLanguage()
         }
+        super.onCreate(savedInstanceState)
         binding = setViewBinding()
         setContentView(binding.root)
         viewModel = ViewModelProvider(this).get(setViewModel()::class.java)
@@ -65,10 +65,7 @@ abstract class AppBaseActivity<VB : ViewBinding, VM : AppBaseViewModel>(val setL
             view = View(this)
         }
         val inputMethodManager = getSystemService(INPUT_METHOD_SERVICE) as InputMethodManager
-        inputMethodManager.toggleSoftInputFromWindow(
-            view.windowToken,
-            InputMethodManager.SHOW_FORCED, 0
-        )
+        inputMethodManager.toggleSoftInputFromWindow(view.windowToken, InputMethodManager.SHOW_FORCED, 0)
     }
 
 }

@@ -6,6 +6,7 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import androidx.viewbinding.ViewBinding
 
+// M | VB => Template types
 abstract class AppBaseAdapter<M, VB : ViewBinding> : RecyclerView.Adapter<AppBaseAdapter<M, VB>.ViewHolder>() {
 
     val list = ArrayList<M>()

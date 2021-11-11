@@ -14,7 +14,8 @@ import androidx.viewbinding.ViewBinding
 import io.reactivex.disposables.CompositeDisposable
 import io.reactivex.disposables.Disposable
 
-abstract class AppBaseFragment<VB : ViewBinding, VM : AppBaseViewModel> : Fragment() {
+// VB | VM => Template types
+abstract class AppBaseFragment<VB : ViewBinding, VM : AppBaseViewModel>(val setLanguage: Boolean? = false) : Fragment() {
 
     lateinit var mContext: Context
     lateinit var mActivity: Activity
@@ -46,6 +47,9 @@ abstract class AppBaseFragment<VB : ViewBinding, VM : AppBaseViewModel> : Fragme
     }*/
 
     override fun onCreate(savedInstanceState: Bundle?) {
+        if (setLanguage == true) {
+            requireContext().bindLanguage()
+        }
         super.onCreate(savedInstanceState)
         setHasOptionsMenu(false)
         mContext = requireContext()
@@ -94,17 +98,13 @@ abstract class AppBaseFragment<VB : ViewBinding, VM : AppBaseViewModel> : Fragme
     }
 
     open fun hideKeyboardFrom(context: Context, view: View) {
-        val imm: InputMethodManager =
-            context.getSystemService(Activity.INPUT_METHOD_SERVICE) as InputMethodManager
+        val imm: InputMethodManager = context.getSystemService(Activity.INPUT_METHOD_SERVICE) as InputMethodManager
         imm.hideSoftInputFromWindow(view.windowToken, 0)
     }
 
     open fun showKeyboard(context: Context, view: View) {
         val inputMethodManager = context.getSystemService(AppCompatActivity.INPUT_METHOD_SERVICE) as InputMethodManager
-        inputMethodManager.toggleSoftInputFromWindow(
-            view.windowToken,
-            InputMethodManager.SHOW_FORCED, 0
-        )
+        inputMethodManager.toggleSoftInputFromWindow(view.windowToken, InputMethodManager.SHOW_FORCED, 0)
     }
 
 }
