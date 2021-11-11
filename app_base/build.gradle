@@ -30,12 +30,61 @@ android {
     }
 
     compileOptions {
-        sourceCompatibility JavaVersion.VERSION_1_8
-        targetCompatibility JavaVersion.VERSION_1_8
+        sourceCompatibility JavaVersion.VERSION_11
+        targetCompatibility JavaVersion.VERSION_11
     }
 
     kotlinOptions {
-        jvmTarget = JavaVersion.VERSION_1_8.toString()
+        jvmTarget = JavaVersion.VERSION_11.toString()
+    }
+
+    lintOptions {
+        checkReleaseBuilds false
+        // Or, if you prefer, you can continue to check for errors in release builds,
+        // but continue the build even when errors are found:
+        abortOnError false
+    }
+
+    java {
+        toolchain {
+            languageVersion.set(JavaLanguageVersion.of(11))
+        }
+    }
+
+}
+
+publishing {
+    publications {
+        maven(MavenPublication) {
+            groupId = "com.application.base"
+            artifactId = "app_base"
+            version = "0.1.0"
+            //from components.java
+            artifact("$buildDir/outputs/aar/app_base-release.aar")
+
+            pom {
+                name = 'Application Base'
+                description = 'Application Base Library'
+
+                /*developers {
+                    developer {
+                        id = 'ashish99799'
+                        name = 'Ashish Vaishnav'
+                        email = 'ashish99799@gmail.com'
+                    }
+                }*/
+            }
+        }
+    }
+    repositories {
+        maven {
+            // Ex : https://maven.pkg.jetbrains.space/mycompany/p/projectkey/my-maven-repo
+            url "https://maven.pkg.jetbrains.space/ashish99799/p/APPLICATION-BASE-MVVM/Application-Base-MVVM"
+            credentials {
+                username = "$username"
+                password = "$password"
+            }
+        }
     }
 }
 
@@ -81,39 +130,4 @@ dependencies {
     testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'androidx.test.ext:junit:1.1.3'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
-}
-
-publishing {
-    publications {
-        maven(MavenPublication) {
-            groupId = "com.application.base"
-            artifactId = "app_base"
-            version = "0.1.0"
-            //from components.java
-            artifact("$buildDir/outputs/aar/app_base-release.aar")
-
-            pom {
-                name = 'Application Base'
-                description = 'Application Base Library'
-
-                /*developers {
-                    developer {
-                        id = 'ashish99799'
-                        name = 'Ashish Vaishnav'
-                        email = 'ashish99799@gmail.com'
-                    }
-                }*/
-            }
-        }
-    }
-    repositories {
-        maven {
-            // Ex : https://maven.pkg.jetbrains.space/mycompany/p/projectkey/my-maven-repo
-            url "https://maven.pkg.jetbrains.space/ashish99799/p/APPLICATION-BASE-MVVM/Application-Base-MVVM"
-            credentials {
-                username = "$username"
-                password = "$password"
-            }
-        }
-    }
 }
