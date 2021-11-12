@@ -188,10 +188,10 @@ proguard/
 
 # Android Studio
 .idea
-/*/build/
+#/*/build/
 /*/local.properties
 /*/out
-/*/*/build
+#/*/*/build
 /*/*/production
 captures/
 .navigation/
