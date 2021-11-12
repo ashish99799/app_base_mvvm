@@ -16,6 +16,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ApplicationBase">
         <activity
+            android:name=".MainActivityResult"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
