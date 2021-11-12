@@ -1,0 +1,2 @@
+com/application/base/BuildConfig.java
+ com.application.base.BuildConfig

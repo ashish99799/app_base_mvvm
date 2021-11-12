@@ -1,0 +1,48 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.application.base" >
+4    <!--
+5<application
+6        android:allowBackup="true"
+7        android:icon="@mipmap/ic_launcher"
+8        android:label="@string/app_name"
+9        android:roundIcon="@mipmap/ic_launcher_round"
+10        android:supportsRtl="true"
+11        android:theme="@style/Theme.ApplicationBase">
+12        <activity
+13            android:name=".MainActivityResult"
+14            android:exported="false" />
+15        <activity
+16            android:name=".MainActivity"
+17            android:exported="true">
+18            <intent-filter>
+19                <action android:name="android.intent.action.MAIN" />
+20
+21                <category android:name="android.intent.category.LAUNCHER" />
+22            </intent-filter>
+23        </activity>
+24    </application>
+25    -->
+26    <uses-sdk
+27        android:minSdkVersion="21"
+27-->D:\AndroidProjects\Demo Projects\app_base_mvvm\app_base\src\main\AndroidManifest.xml
+28        android:targetSdkVersion="31" />
+28-->D:\AndroidProjects\Demo Projects\app_base_mvvm\app_base\src\main\AndroidManifest.xml
+29
+30    <uses-permission android:name="android.permission.INTERNET" />
+30-->D:\AndroidProjects\Demo Projects\app_base_mvvm\app_base\src\main\AndroidManifest.xml:5:5-67
+30-->D:\AndroidProjects\Demo Projects\app_base_mvvm\app_base\src\main\AndroidManifest.xml:5:22-64
+31    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+31-->D:\AndroidProjects\Demo Projects\app_base_mvvm\app_base\src\main\AndroidManifest.xml:6:5-79
+31-->D:\AndroidProjects\Demo Projects\app_base_mvvm\app_base\src\main\AndroidManifest.xml:6:22-76
+32    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+32-->D:\AndroidProjects\Demo Projects\app_base_mvvm\app_base\src\main\AndroidManifest.xml:7:5-79
+32-->D:\AndroidProjects\Demo Projects\app_base_mvvm\app_base\src\main\AndroidManifest.xml:7:22-76
+33    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+33-->D:\AndroidProjects\Demo Projects\app_base_mvvm\app_base\src\main\AndroidManifest.xml:8:5-76
+33-->D:\AndroidProjects\Demo Projects\app_base_mvvm\app_base\src\main\AndroidManifest.xml:8:22-73
+34    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+34-->D:\AndroidProjects\Demo Projects\app_base_mvvm\app_base\src\main\AndroidManifest.xml:9:5-76
+34-->D:\AndroidProjects\Demo Projects\app_base_mvvm\app_base\src\main\AndroidManifest.xml:9:22-73
+35
+36</manifest>
