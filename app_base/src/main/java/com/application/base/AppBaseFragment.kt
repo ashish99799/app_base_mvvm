@@ -28,7 +28,7 @@ abstract class AppBaseFragment<VB : ViewBinding, VM : AppBaseViewModel>(val setL
 
     private val disposableContainer = CompositeDisposable()
 
-    protected val activityLauncher = AppBaseActivityResult.registerActivityForResult(this)
+    protected val activityLauncher = AppBaseActivityResultKt.registerActivityForResult(this)
     /*activityLauncher.launch(Intent(this, MyCouponsByVendorActivity::class.java).apply {
         putExtra(VENDOR_DATA, qrCodeData)
     }) {
