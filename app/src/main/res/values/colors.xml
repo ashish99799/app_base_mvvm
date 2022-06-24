@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3354CC</color>
+    <color name="colorPrimaryDark">#3354CC</color>
+    <color name="colorAccent">#3354CC</color>
+
+    <color name="colorSendCoinBg">#4469ED</color>
+    <color name="colorCancelBg">#E9EBF0</color>
+
+    <color name="colorButton">#3354CC</color>
+    <color name="colorButtonWallet">#3d5dcf</color>
+    <color name="colorButtonLight">#F6F6FF</color>
+    <color name="colorLine">#EBEBFF</color>
+    <color name="colorBanner">#3D5DCF</color>
+    <color name="colorBottomBg">#F9F9FC</color>
+    <color name="colorChatHintBg">#F4F7FF</color>
+
+    <color name="colorGenderSelect">#FFE3E6</color>
+    <color name="colorDashboardButton">#3ac8d8</color>
+
+    <color name="colorText">#444444</color>
+    <color name="colorTextLight">#777777</color>
+    <color name="colorTextShare">#6D8CFC</color>
+
+    <color name="colorSelectedTab">#3354CC</color>
+    <color name="colorUnselectedTab">#E4E7F2</color>
+
+    <color name="colorProgressBg">#BFC7E1</color>
+
+    <color name="colorShareBg">#0DFFFFFF</color>
+    <color name="colorViewBg">#261B1B1B</color>
+
+    <color name="colorProgressGreenBg">#D2E9D5</color>
+    <color name="colorProgressGreen">#179B24</color>
+
+    <color name="colorProgressRedBg">#FFE2E2</color>
+    <color name="colorProgressRed">#FF6969</color>
+
+    <color name="colorAppBg">#FFFFFF</color>
+    <color name="colorTitleBg">#DFDFDF</color>
+
+    <color name="colorOtpBg">#EEF0F4</color>
+    <color name="colorOtpBoarder">#EEF0F4</color>
+
+    <color name="colorTransparent">#00000000</color>
+
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colorBlack">#000000</color>
+    <color name="colorLightBlack">#333333</color>
+
+    <color name="colorGrey">#C5C5C5</color>
+
+    <color name="colorTabText">#707070</color>
+    <color name="colorTabBg">#FFFFFF</color>
+    <color name="colorBottomTabBg">#2e4cb8</color>
+
+    <color name="colorWalletBg">#DCDCDC</color>
+
+    <color name="colorPending">#3354CC</color>
+    <color name="colorInProcess">#FFA31A</color>
+    <color name="colorSuccess">#18BD6E</color>
+    <color name="colorFiled">#FF5823</color>
+
+    <color name="colorFacebook">#4267B2</color>
+    <color name="colorGoogle">#D6492F</color>
+    <color name="colorTwitter">#08A0E9</color>
+    <color name="colorWhatsapp">#4DC85A</color>
+    <color name="colorInstagram">#DD427A</color>
+    <color name="colorSMS">#5275F5</color>
+
+    <color name="colorBalanceBg">#D3D3D3</color>
+    <color name="colorUpiBg">#F2F2F2</color>
+    <color name="colorCopyBg">#F2F2F2</color>
+    <color name="colorUploadBg">#FFF0BB</color>
+    <color name="colorUploadBorder">#DAC169</color>
+
+    <color name="colorYellow">#fddc2b</color>
+    <color name="colorStatusBg">#FFAA00</color>
+    <color name="colorBankButtonBg">#FBAF5D</color>
+
+    <color name="colorRed">#FF0000</color>
+    <color name="colorDarkRed">#8B0000</color>
+    <color name="colorGreen">#008000</color>
+    <color name="colorDarkGreen">#006400</color>
+    <color name="colorBlue">#0000FF</color>
+    <color name="colorDarkBlue">#00008B</color>
+
+    <color name="colorDialogBg">#9C000000</color>
+
+    <color name="colorArrow">#979797</color>
+</resources>
