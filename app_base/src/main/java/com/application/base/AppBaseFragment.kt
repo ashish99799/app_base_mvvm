@@ -48,7 +48,7 @@ abstract class AppBaseFragment<VB : ViewBinding, VM : AppBaseViewModel>(val setL
 
     override fun onCreate(savedInstanceState: Bundle?) {
         if (setLanguage == true) {
-            requireContext().bindLanguage()
+            requireContext().setLocale(requireContext().getLanguage())
         }
         super.onCreate(savedInstanceState)
         setHasOptionsMenu(false)

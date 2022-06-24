@@ -1,6 +1,6 @@
 package com.application.base
 
-/*
+/*import android.content.Intent
 import com.application.base.databinding.ActivityMainResultBinding
 
 class MainActivityResult : AppBaseActivity<ActivityMainResultBinding, MainActivityViewModel>() {
@@ -10,13 +10,11 @@ class MainActivityResult : AppBaseActivity<ActivityMainResultBinding, MainActivi
     override fun setViewModel() = MainActivityViewModel.newInstance(this)
 
     override fun initView() {
-        */
-/*setResult(RESULT_OK, Intent().apply {
+        setResult(RESULT_OK, Intent().apply {
             putExtra("INTENT_DATA", "Success")
         }).also {
             finish()
-        }*//*
-
+        }
     }
 
     override fun initOnClick() {

@@ -47,14 +47,19 @@ abstract class AppBaseActivity<VB : ViewBinding, VM : AppBaseViewModel>(private 
     }
     */
 
-    override fun onCreate(savedInstanceState: Bundle?) {
+    override fun attachBaseContext(base: Context) {
         if (setLanguage == true) {
-            bindLanguage()
+            super.attachBaseContext(base.setLocale(getLanguage()))
+        } else {
+            super.attachBaseContext(base)
         }
+    }
+
+    override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = setViewBinding()
         setContentView(binding.root)
-        viewModel = ViewModelProvider(this).get(setViewModel()::class.java)
+        viewModel = ViewModelProvider(this)[setViewModel()::class.java]
         initView()
         initOnClick()
     }
