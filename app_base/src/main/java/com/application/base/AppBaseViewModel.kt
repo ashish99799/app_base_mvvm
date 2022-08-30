@@ -3,6 +3,7 @@ package com.application.base
 import android.content.Context
 import android.util.Log
 import androidx.lifecycle.ViewModel
+import com.google.firebase.crashlytics.buildtools.reloc.org.apache.http.HttpException
 import com.google.gson.Gson
 import io.reactivex.Observable
 import io.reactivex.Observer
@@ -11,7 +12,6 @@ import io.reactivex.disposables.Disposable
 import io.reactivex.schedulers.Schedulers
 import org.jetbrains.anko.*
 import org.json.JSONObject
-import retrofit2.HttpException
 
 abstract class AppBaseViewModel : ViewModel() {
 
@@ -25,6 +25,7 @@ abstract class AppBaseViewModel : ViewModel() {
         noInternet: () -> Unit,
         onStart: () -> Unit,
         onFinish: () -> Unit,
+        onError: (Throwable) -> Unit,
         onAuthFail: () -> Unit
     ) {
         context = mContext
@@ -48,9 +49,10 @@ abstract class AppBaseViewModel : ViewModel() {
 
                 override fun onError(e: Throwable) {
                     onFinish.invoke()
-                    onResponseFailure(context!!, e) {
+                    onError.invoke(e)
+                    /*onResponseFailure(context!!, e) {
                         onAuthFail.invoke()
-                    }
+                    }*/
                 }
 
                 override fun onComplete() {
@@ -63,11 +65,11 @@ abstract class AppBaseViewModel : ViewModel() {
         context = mContext
         val error: HttpException = throwable as HttpException
         Log.e("API", "Error : ${error.message ?: ""}")
-        Log.e("API", "Error : ${error.code()}")
-        when (error.code()) {
+        Log.e("API", "Error : ${error.hashCode()}")
+        when (error.hashCode()) {
             // InValidateData
             422 -> {
-                val errorRawData = throwable.response()!!.errorBody().toString()
+                val errorRawData = throwable.message ?: ""
                 if (errorRawData.isNotEmpty()) {
                     if (errorRawData.contains("{") && errorRawData.contains(mContext.getErrorMessage())) {
                         errorDialog(
@@ -81,14 +83,14 @@ abstract class AppBaseViewModel : ViewModel() {
             }
             // Unauthenticated
             401 -> {
-                val errorRawData = throwable.message
+                val errorRawData = throwable.message ?: ""
                 if (!errorRawData.isNullOrEmpty()) {
                     if (errorRawData.contains("{") && errorRawData.contains(mContext.getErrorMessage())) {
                         context!!.alert(JSONObject(errorRawData).getString(mContext.getErrorMessage()), "Alert") {
                             okButton { onAuthFail.invoke() }
                         }.show()
                     } else {
-                        errorDialog(errorRawData.toString())
+                        errorDialog(errorRawData)
                     }
                 } else {
                     onAuthFail.invoke()
@@ -104,7 +106,7 @@ abstract class AppBaseViewModel : ViewModel() {
             404 -> errorDialog("Page not found")
             // BadRequest, Unauthorized, RequestTimeOut, Conflict, Blocked
             400, 403, 408, 409, 423 -> {
-                val errorRawData = throwable.message
+                val errorRawData = throwable.message ?: ""
                 if (!errorRawData.isNullOrEmpty()) {
                     if (errorRawData.contains("{") && errorRawData.contains(mContext.getErrorMessage())) {
                         errorDialog(JSONObject(errorRawData).getString(mContext.getErrorMessage()))
@@ -117,7 +119,6 @@ abstract class AppBaseViewModel : ViewModel() {
     }
 
     private fun errorDialog(optString: String, title: String = "Alert") {
-//        toastError(optString)
         context!!.alert(optString, title) { okButton { } }.build().show()
     }
 
