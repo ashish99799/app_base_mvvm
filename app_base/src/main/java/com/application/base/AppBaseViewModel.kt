@@ -42,7 +42,7 @@ abstract class AppBaseViewModel : ViewModel() {
                     onStart.invoke()
                 }
 
-                override fun onNext(response: T) {
+                override fun onNext(response: T & Any) {
                     Log.e("API", "Success : ${Gson().toJson(response)}")
                     onResponse(response)
                 }
