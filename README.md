@@ -22,7 +22,7 @@ Add it in your root build.gradle at the end of repositories:
 Add it in your settings.gradle.kts at the end of repositories:
 
 ```kotlin
-	dependencyResolutionManagement {
+    dependencyResolutionManagement {
         repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
         repositories {
             ...
@@ -34,7 +34,9 @@ Add it in your settings.gradle.kts at the end of repositories:
 <b>Step 2.1</b> Add the dependency for JAVA.
 
 ```java
-	implementation 'com.github.ashish99799:app_base_mvvm:1.0.2'
+	dependencies {
+        implementation 'com.github.ashish99799:app_base_mvvm:1.0.2'
+    }
 ```
 
 <b>Step 2.2</b> Add the dependency for KOTLIN.
