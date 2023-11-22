@@ -2,6 +2,7 @@ plugins {
     id("com.android.library")
     id("org.jetbrains.kotlin.android")
     id("kotlin-android")
+    id("maven-publish")
 }
 
 android {
@@ -42,6 +43,17 @@ android {
     }
 }
 
+java {
+    toolchain {
+        languageVersion.set(JavaLanguageVersion.of(17))        // << --- ADD This
+    }
+}
+
+java {
+    sourceCompatibility = JavaVersion.VERSION_17            // << --- ADD This
+    targetCompatibility = JavaVersion.VERSION_17
+}
+
 dependencies {
     // Android X => AppCompat | Core | Support | Constraint
     implementation("androidx.core:core-ktx:1.12.0")
@@ -70,7 +82,6 @@ dependencies {
     implementation("io.reactivex.rxjava2:rxandroid:2.1.1")
 
     implementation("com.google.firebase:firebase-crashlytics-buildtools:2.9.9")
-    implementation("com.google.guava:guava:27.0.1-android")
 
     // Android Test
     testImplementation("junit:junit:4.13.2")
@@ -79,4 +90,17 @@ dependencies {
 
     // Jitpack
     implementation("com.github.jitpack:gradle-simple:1.1")
+}
+
+publishing {
+    publications {
+        register<MavenPublication>("release") {
+            groupId = "com.github.ashish99799"
+            artifactId = "app_base_mvvm"
+            version = "1.0.2"
+            afterEvaluate {
+                from(components["release"])
+            }
+        }
+    }
 }
