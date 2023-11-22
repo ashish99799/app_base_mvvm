@@ -15,8 +15,7 @@ import com.scwang.smartrefresh.layout.constant.SpinnerStyle
 
 class AvLoadingFooter(context: Context?) : RelativeLayout(context), RefreshFooter {
 
-    val isSupportHorizontalDrag: Boolean
-        get() = false
+    private var isSupportHorizontalDrag: Boolean = false
 
     init {
         layoutParams = ViewGroup.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.WRAP_CONTENT)
@@ -24,7 +23,9 @@ class AvLoadingFooter(context: Context?) : RelativeLayout(context), RefreshFoote
     }
 
     override fun onPullingUp(percent: Float, offset: Int, footerHeight: Int, extendHeight: Int) {}
+
     override fun onPullReleasing(percent: Float, offset: Int, footerHeight: Int, extendHeight: Int) {}
+
     override fun setLoadmoreFinished(finished: Boolean): Boolean {
         return false
     }
@@ -38,9 +39,13 @@ class AvLoadingFooter(context: Context?) : RelativeLayout(context), RefreshFoote
     }
 
     override fun setPrimaryColors(@ColorInt vararg colors: Int) {}
+
     override fun onInitialized(kernel: RefreshKernel, height: Int, extendHeight: Int) {}
+
     override fun onHorizontalDrag(percentX: Float, offsetX: Int, offsetMax: Int) {}
+
     override fun onStartAnimator(layout: RefreshLayout, height: Int, extendHeight: Int) {}
+
     override fun onFinish(layout: RefreshLayout, success: Boolean): Int {
         return 0
     }

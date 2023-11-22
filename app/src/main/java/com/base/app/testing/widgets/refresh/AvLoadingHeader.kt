@@ -16,8 +16,7 @@ import com.scwang.smartrefresh.layout.constant.SpinnerStyle
 
 class AvLoadingHeader(context: Context) : RelativeLayout(context), RefreshHeader {
 
-    val isSupportHorizontalDrag: Boolean
-        get() = false
+    private var isSupportHorizontalDrag: Boolean = false
 
     private val lottieAnimation: LottieAnimationView?
 
@@ -49,7 +48,9 @@ class AvLoadingHeader(context: Context) : RelativeLayout(context), RefreshHeader
     }
 
     override fun onPullingDown(percent: Float, offset: Int, headerHeight: Int, extendHeight: Int) {}
+
     override fun onReleasing(percent: Float, offset: Int, headerHeight: Int, extendHeight: Int) {}
+
     override fun getView(): View {
         return this
     }
@@ -59,9 +60,13 @@ class AvLoadingHeader(context: Context) : RelativeLayout(context), RefreshHeader
     }
 
     override fun setPrimaryColors(@ColorInt vararg colors: Int) {}
+
     override fun onInitialized(kernel: RefreshKernel, height: Int, extendHeight: Int) {}
+
     override fun onHorizontalDrag(percentX: Float, offsetX: Int, offsetMax: Int) {}
+
     override fun onStartAnimator(layout: RefreshLayout, height: Int, extendHeight: Int) {}
+
     override fun onFinish(layout: RefreshLayout, success: Boolean): Int {
         return 0
     }

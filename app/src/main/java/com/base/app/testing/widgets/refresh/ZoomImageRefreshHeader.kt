@@ -14,8 +14,7 @@ import com.scwang.smartrefresh.layout.constant.SpinnerStyle
 
 class ZoomImageRefreshHeader @JvmOverloads constructor(context: Context, attrs: AttributeSet? = null, defStyleAttr: Int = 0) : ImageView(context, attrs, defStyleAttr), RefreshHeader {
 
-    val isSupportHorizontalDrag: Boolean
-        get() = false
+    private var isSupportHorizontalDrag: Boolean = false
 
     init {
         init(context, attrs)

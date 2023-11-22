@@ -70,6 +70,7 @@ dependencies {
     implementation("io.reactivex.rxjava2:rxandroid:2.1.1")
 
     implementation("com.google.firebase:firebase-crashlytics-buildtools:2.9.9")
+    implementation("com.google.guava:guava:27.0.1-android")
 
     // Android Test
     testImplementation("junit:junit:4.13.2")
