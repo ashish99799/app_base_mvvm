@@ -2,6 +2,7 @@ plugins {
     id("com.android.library")
     id("org.jetbrains.kotlin.android")
     id("kotlin-android")
+    id("maven-publish")
 }
 
 android {
@@ -40,6 +41,24 @@ android {
         abortOnError = false
         checkReleaseBuilds = false
     }
+
+    publishing {
+        singleVariant("release") {
+            withSourcesJar()
+            withJavadocJar()
+        }
+    }
+}
+
+java {
+    toolchain {
+        languageVersion.set(JavaLanguageVersion.of(17))        // << --- ADD This
+    }
+}
+
+java {
+    sourceCompatibility = JavaVersion.VERSION_17            // << --- ADD This
+    targetCompatibility = JavaVersion.VERSION_17
 }
 
 dependencies {
@@ -78,4 +97,17 @@ dependencies {
 
     // Jitpack
     implementation("com.github.jitpack:gradle-simple:1.1")
+}
+
+publishing {
+    publications {
+        register<MavenPublication>("release") {
+            groupId = "com.github.ashish99799"
+            artifactId = "app_base_mvvm"
+            version = "1.0.2"
+            afterEvaluate {
+                from(components["release"])
+            }
+        }
+    }
 }
