@@ -1,6 +1,9 @@
 package com.base.app.testing.widgets
 
-import com.base.app.testing.widgets.refresh.*
+import com.base.app.testing.widgets.refresh.AvLoadingFooter
+import com.base.app.testing.widgets.refresh.AvLoadingHeader
+import com.base.app.testing.widgets.refresh.DensityUtils
+import com.base.app.testing.widgets.refresh.ZoomImageRefreshHeader
 import com.scwang.smartrefresh.layout.SmartRefreshLayout
 import com.scwang.smartrefresh.layout.api.RefreshFooter
 import com.scwang.smartrefresh.layout.api.RefreshHeader
