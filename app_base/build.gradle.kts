@@ -11,7 +11,7 @@ android {
 
     defaultConfig {
         minSdk = 24
-        version = "1.0.2"
+        version = "1.0.1"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
         consumerProguardFiles("consumer-rules.pro")
@@ -104,7 +104,7 @@ publishing {
         register<MavenPublication>("release") {
             groupId = "com.github.ashish99799"
             artifactId = "app_base_mvvm"
-            version = "1.0.2"
+            version = "1.0.1"
             afterEvaluate {
                 from(components["release"])
             }
