@@ -43,6 +43,6 @@ Add it in your settings.gradle.kts at the end of repositories:
 
 ```kotlin
 	dependencies {
-	        implementation("com.github.ashish99799:app_base_mvvm:1.0.2")
+        implementation("com.github.ashish99799:app_base_mvvm:1.0.2")
 	}
 ```
