@@ -2,6 +2,7 @@ plugins {
     id("com.android.library")
     id("org.jetbrains.kotlin.android")
     id("kotlin-android")
+    id("maven-publish")
 }
 
 android {
@@ -40,6 +41,17 @@ android {
         abortOnError = false
         checkReleaseBuilds = false
     }
+}
+
+java {
+    toolchain {
+        languageVersion.set(JavaLanguageVersion.of(17))        // << --- ADD This
+    }
+}
+
+java {
+    sourceCompatibility = JavaVersion.VERSION_17            // << --- ADD This
+    targetCompatibility = JavaVersion.VERSION_17
 }
 
 dependencies {
