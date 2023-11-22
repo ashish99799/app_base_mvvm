@@ -6,8 +6,8 @@ import android.widget.ImageView
 import androidx.appcompat.widget.SearchView
 import androidx.core.content.ContextCompat
 import com.application.base.AppBaseActivity
-import com.application.base.R
-import com.application.base.databinding.ActivitySearchBinding
+import com.base.app.testing.R
+import com.base.app.testing.databinding.ActivitySearchBinding
 import com.base.app.testing.ui.main.github_user.GithubUserActivity
 import com.base.app.testing.ui.main.search.adapter.SearchAdapter
 import com.base.app.testing.util.INTENT_DATA

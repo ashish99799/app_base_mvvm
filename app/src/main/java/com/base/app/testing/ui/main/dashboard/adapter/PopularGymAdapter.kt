@@ -4,8 +4,8 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import com.application.base.AppBaseFilterAdapter
-import com.application.base.R
-import com.application.base.databinding.ItemPopularGymCellBinding
+import com.base.app.testing.R
+import com.base.app.testing.databinding.ItemPopularGymCellBinding
 import com.base.app.testing.model.db.PopularGymData
 import com.base.app.testing.util.loadImage
 

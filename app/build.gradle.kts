@@ -7,12 +7,12 @@ plugins {
 }
 
 android {
-    namespace = "com.application.base"
+    namespace = "com.base.app.testing"
     compileSdk = 34
 
     defaultConfig {
         minSdk = 24
-        applicationId = "com.application.base"
+        applicationId = "com.base.app.testing"
         minSdk = 24
         targetSdk = 34
         versionCode = 1
@@ -48,7 +48,8 @@ dependencies {
     implementation(fileTree(mapOf("dir" to "libs", "include" to listOf("*.jar", "*.aar"))))
 
     // Project Library
-    // implementation(project(mapOf("path" to ":app_base")))
+    implementation(project(mapOf("path" to ":app_base")))
+    implementation("com.github.ashish99799:app_base_mvvm:1.0.2")
 
     // AndroidX => AppCompat | Core | Support | Constraint Layout
     implementation("androidx.appcompat:appcompat:1.6.1")

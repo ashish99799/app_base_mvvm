@@ -6,8 +6,8 @@ import androidx.appcompat.widget.SearchView
 import androidx.core.content.ContextCompat
 import androidx.swiperefreshlayout.widget.SwipeRefreshLayout
 import com.application.base.AppBaseActivity
-import com.application.base.R
-import com.application.base.databinding.ActivityGithubUserBinding
+import com.base.app.testing.R
+import com.base.app.testing.databinding.ActivityGithubUserBinding
 import com.base.app.testing.model.responses.RowData
 import com.base.app.testing.ui.main.github_user.adapter.UserRepoAdapter
 import com.base.app.testing.util.INTENT_DATA

@@ -4,7 +4,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import com.application.base.AppBaseFilterAdapter
-import com.application.base.databinding.ItemGithubUserCellBinding
+import com.base.app.testing.databinding.ItemGithubUserCellBinding
 import com.base.app.testing.model.responses.UserRepoData
 
 class UserRepoAdapter : AppBaseFilterAdapter<UserRepoData, ItemGithubUserCellBinding>() {

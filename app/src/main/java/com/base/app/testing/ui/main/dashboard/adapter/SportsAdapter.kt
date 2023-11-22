@@ -7,8 +7,8 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.core.content.ContextCompat
 import com.application.base.AppBaseAdapter
-import com.application.base.R
-import com.application.base.databinding.ItemSportsCellBinding
+import com.base.app.testing.R
+import com.base.app.testing.databinding.ItemSportsCellBinding
 
 class SportsAdapter(val mContext: Context) : AppBaseAdapter<String, ItemSportsCellBinding>() {
 

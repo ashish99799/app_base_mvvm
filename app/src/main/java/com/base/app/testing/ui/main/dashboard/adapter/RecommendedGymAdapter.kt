@@ -4,8 +4,8 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import com.application.base.AppBaseAdapter
-import com.application.base.R
-import com.application.base.databinding.ItemRecommendedGymCellBinding
+import com.base.app.testing.R
+import com.base.app.testing.databinding.ItemRecommendedGymCellBinding
 import com.base.app.testing.model.db.GymData
 import com.base.app.testing.util.loadImage
 

@@ -7,7 +7,7 @@ import android.view.ViewGroup
 import android.widget.RelativeLayout
 import androidx.annotation.ColorInt
 import com.airbnb.lottie.LottieAnimationView
-import com.application.base.R
+import com.base.app.testing.R
 import com.scwang.smartrefresh.layout.api.RefreshHeader
 import com.scwang.smartrefresh.layout.api.RefreshKernel
 import com.scwang.smartrefresh.layout.api.RefreshLayout

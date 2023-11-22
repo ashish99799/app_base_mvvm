@@ -3,8 +3,8 @@ package com.base.app.testing.ui.splash
 import android.os.Handler
 import android.os.Looper
 import com.application.base.AppBaseActivity
-import com.application.base.R
-import com.application.base.databinding.ActivitySplashScreenBinding
+import com.base.app.testing.R
+import com.base.app.testing.databinding.ActivitySplashScreenBinding
 import com.base.app.testing.model.db.GymData
 import com.base.app.testing.model.db.PopularGymData
 import com.base.app.testing.model.responses.GymList

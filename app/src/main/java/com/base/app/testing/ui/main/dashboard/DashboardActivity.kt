@@ -3,8 +3,8 @@ package com.base.app.testing.ui.main.dashboard
 import android.view.View
 import androidx.core.widget.NestedScrollView
 import com.application.base.AppBaseActivity
-import com.application.base.R
-import com.application.base.databinding.ActivityDashboardBinding
+import com.base.app.testing.R
+import com.base.app.testing.databinding.ActivityDashboardBinding
 import com.base.app.testing.ui.main.dashboard.adapter.PopularGymAdapter
 import com.base.app.testing.ui.main.dashboard.adapter.RecommendedGymAdapter
 import com.base.app.testing.ui.main.dashboard.adapter.SportsAdapter

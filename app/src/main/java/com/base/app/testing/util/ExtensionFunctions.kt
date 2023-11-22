@@ -13,8 +13,8 @@ import android.view.LayoutInflater
 import android.view.Window
 import android.view.WindowManager
 import android.widget.ImageView
-import com.application.base.R
-import com.application.base.databinding.ProgressBinding
+import com.base.app.testing.R
+import com.base.app.testing.databinding.ProgressBinding
 import com.base.app.testing.model.responses.GymList
 import com.base.app.testing.model.responses.JsonData
 import com.bumptech.glide.Glide

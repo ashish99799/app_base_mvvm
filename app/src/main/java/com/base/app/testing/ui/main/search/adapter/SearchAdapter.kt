@@ -4,7 +4,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import com.application.base.AppBaseAdapter
-import com.application.base.databinding.ItemSearchRepoCellBinding
+import com.base.app.testing.databinding.ItemSearchRepoCellBinding
 import com.base.app.testing.model.responses.RowData
 import com.base.app.testing.util.loadImage
 
