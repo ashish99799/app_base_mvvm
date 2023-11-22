@@ -18,4 +18,3 @@ dependencyResolutionManagement {
 
 rootProject.name = "Application Base"
 include(":app")
-include(":app_base")
