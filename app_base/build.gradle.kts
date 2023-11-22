@@ -5,7 +5,7 @@ plugins {
 }
 
 android {
-    namespace = "com.base.app.testing"
+    namespace = "com.application.base"
     compileSdk = 34
 
     defaultConfig {
