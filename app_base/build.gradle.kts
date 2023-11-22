@@ -41,6 +41,13 @@ android {
         abortOnError = false
         checkReleaseBuilds = false
     }
+
+    publishing {
+        singleVariant("release") {
+            withSourcesJar()
+            withJavadocJar()
+        }
+    }
 }
 
 java {

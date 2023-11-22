@@ -1,0 +1,9 @@
+# configuration file for building snapshots and releases with jitpack.io
+jdk:
+  - openjdk17
+before_install:
+  - ./scripts/prepareJitpackEnvironment.sh
+install:
+  - FILE="-Dfile=app_base.aar" #com-atifqamar-customtoast.aar
+  - mvn install:install-file $FILE -DgroupId=com.github.ashish99799 -DartifactId=app_base_mvvm -Dversion=1.0.2 -Dpackaging=aar -DgeneratePom=true
+                                             #com.github.geek-atif                      #com-atifqamar-customtoast  #1.0
