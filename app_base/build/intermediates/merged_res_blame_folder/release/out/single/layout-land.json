@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "com.application.base.app_base-merged_res-42:/layout-land/material_clock_period_toggle_land.xml",
+        "source": "com.application.base.app_base-material-1.10.0-9:/layout-land/material_clock_period_toggle_land.xml"
+    },
+    {
+        "merged": "com.application.base.app_base-merged_res-42:/layout-land/mtrl_picker_header_dialog.xml",
+        "source": "com.application.base.app_base-material-1.10.0-9:/layout-land/mtrl_picker_header_dialog.xml"
+    },
+    {
+        "merged": "com.application.base.app_base-merged_res-42:/layout-land/material_timepicker.xml",
+        "source": "com.application.base.app_base-material-1.10.0-9:/layout-land/material_timepicker.xml"
+    }
+]

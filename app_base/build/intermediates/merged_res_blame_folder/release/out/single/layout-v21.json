@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "com.application.base.app_base-merged_res-42:/layout-v21/notification_action_tombstone.xml",
+        "source": "com.application.base.app_base-core-1.12.0-33:/layout-v21/notification_action_tombstone.xml"
+    },
+    {
+        "merged": "com.application.base.app_base-merged_res-42:/layout-v21/notification_action.xml",
+        "source": "com.application.base.app_base-core-1.12.0-33:/layout-v21/notification_action.xml"
+    },
+    {
+        "merged": "com.application.base.app_base-merged_res-42:/layout-v21/notification_template_custom_big.xml",
+        "source": "com.application.base.app_base-core-1.12.0-33:/layout-v21/notification_template_custom_big.xml"
+    },
+    {
+        "merged": "com.application.base.app_base-merged_res-42:/layout-v21/notification_template_icon_group.xml",
+        "source": "com.application.base.app_base-core-1.12.0-33:/layout-v21/notification_template_icon_group.xml"
+    }
+]

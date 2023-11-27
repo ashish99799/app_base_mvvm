@@ -1,0 +1,38 @@
+[
+    {
+        "merged": "com.application.base.app_base-merged_res-42:/color-v23/abc_tint_seek_thumb.xml",
+        "source": "com.application.base.app_base-appcompat-1.6.1-22:/color-v23/abc_tint_seek_thumb.xml"
+    },
+    {
+        "merged": "com.application.base.app_base-merged_res-42:/color-v23/abc_tint_spinner.xml",
+        "source": "com.application.base.app_base-appcompat-1.6.1-22:/color-v23/abc_tint_spinner.xml"
+    },
+    {
+        "merged": "com.application.base.app_base-merged_res-42:/color-v23/abc_btn_colored_text_material.xml",
+        "source": "com.application.base.app_base-appcompat-1.6.1-22:/color-v23/abc_btn_colored_text_material.xml"
+    },
+    {
+        "merged": "com.application.base.app_base-merged_res-42:/color-v23/abc_tint_btn_checkable.xml",
+        "source": "com.application.base.app_base-appcompat-1.6.1-22:/color-v23/abc_tint_btn_checkable.xml"
+    },
+    {
+        "merged": "com.application.base.app_base-merged_res-42:/color-v23/abc_color_highlight_material.xml",
+        "source": "com.application.base.app_base-appcompat-1.6.1-22:/color-v23/abc_color_highlight_material.xml"
+    },
+    {
+        "merged": "com.application.base.app_base-merged_res-42:/color-v23/abc_btn_colored_borderless_text_material.xml",
+        "source": "com.application.base.app_base-appcompat-1.6.1-22:/color-v23/abc_btn_colored_borderless_text_material.xml"
+    },
+    {
+        "merged": "com.application.base.app_base-merged_res-42:/color-v23/abc_tint_edittext.xml",
+        "source": "com.application.base.app_base-appcompat-1.6.1-22:/color-v23/abc_tint_edittext.xml"
+    },
+    {
+        "merged": "com.application.base.app_base-merged_res-42:/color-v23/abc_tint_default.xml",
+        "source": "com.application.base.app_base-appcompat-1.6.1-22:/color-v23/abc_tint_default.xml"
+    },
+    {
+        "merged": "com.application.base.app_base-merged_res-42:/color-v23/abc_tint_switch_track.xml",
+        "source": "com.application.base.app_base-appcompat-1.6.1-22:/color-v23/abc_tint_switch_track.xml"
+    }
+]

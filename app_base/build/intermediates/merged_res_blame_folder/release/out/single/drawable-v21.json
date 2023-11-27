@@ -1,0 +1,42 @@
+[
+    {
+        "merged": "com.application.base.app_base-merged_res-42:/drawable-v21/abc_list_divider_material.xml",
+        "source": "com.application.base.app_base-appcompat-1.6.1-22:/drawable-v21/abc_list_divider_material.xml"
+    },
+    {
+        "merged": "com.application.base.app_base-merged_res-42:/drawable-v21/abc_dialog_material_background.xml",
+        "source": "com.application.base.app_base-appcompat-1.6.1-22:/drawable-v21/abc_dialog_material_background.xml"
+    },
+    {
+        "merged": "com.application.base.app_base-merged_res-42:/drawable-v21/material_cursor_drawable.xml",
+        "source": "com.application.base.app_base-material-1.10.0-9:/drawable-v21/material_cursor_drawable.xml"
+    },
+    {
+        "merged": "com.application.base.app_base-merged_res-42:/drawable-v21/abc_edit_text_material.xml",
+        "source": "com.application.base.app_base-appcompat-1.6.1-22:/drawable-v21/abc_edit_text_material.xml"
+    },
+    {
+        "merged": "com.application.base.app_base-merged_res-42:/drawable-v21/abc_btn_colored_material.xml",
+        "source": "com.application.base.app_base-appcompat-1.6.1-22:/drawable-v21/abc_btn_colored_material.xml"
+    },
+    {
+        "merged": "com.application.base.app_base-merged_res-42:/drawable-v21/notification_action_background.xml",
+        "source": "com.application.base.app_base-core-1.12.0-33:/drawable-v21/notification_action_background.xml"
+    },
+    {
+        "merged": "com.application.base.app_base-merged_res-42:/drawable-v21/mtrl_navigation_bar_item_background.xml",
+        "source": "com.application.base.app_base-material-1.10.0-9:/drawable-v21/mtrl_navigation_bar_item_background.xml"
+    },
+    {
+        "merged": "com.application.base.app_base-merged_res-42:/drawable-v21/preference_list_divider_material.xml",
+        "source": "com.application.base.app_base-preference-1.2.1-25:/drawable-v21/preference_list_divider_material.xml"
+    },
+    {
+        "merged": "com.application.base.app_base-merged_res-42:/drawable-v21/ic_arrow_down_24dp.xml",
+        "source": "com.application.base.app_base-preference-1.2.1-25:/drawable-v21/ic_arrow_down_24dp.xml"
+    },
+    {
+        "merged": "com.application.base.app_base-merged_res-42:/drawable-v21/abc_action_bar_item_background_material.xml",
+        "source": "com.application.base.app_base-appcompat-1.6.1-22:/drawable-v21/abc_action_bar_item_background_material.xml"
+    }
+]
