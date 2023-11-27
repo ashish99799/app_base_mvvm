@@ -15,10 +15,10 @@ import io.reactivex.disposables.CompositeDisposable
 import io.reactivex.disposables.Disposable
 
 // VB | VM => Template types
-abstract class AppBaseFragment<VB : ViewBinding, VM : AppBaseViewModel>(private val setLanguage: Boolean? = false) : Fragment() {
+abstract class AppBaseFragment<VB : ViewBinding, VM : AppBaseViewModel>(val setLanguage: Boolean? = false) : Fragment() {
 
-    private lateinit var mContext: Context
-    private lateinit var mActivity: Activity
+    lateinit var mContext: Context
+    lateinit var mActivity: Activity
 
     lateinit var binding: VB
     abstract fun getViewBinding(): VB
@@ -58,7 +58,7 @@ abstract class AppBaseFragment<VB : ViewBinding, VM : AppBaseViewModel>(private 
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View {
         binding = getViewBinding()
-        viewModel = ViewModelProvider(requireActivity())[getViewModelClass()::class.java]
+        viewModel = ViewModelProvider(requireActivity()).get(getViewModelClass()::class.java)
         return binding.root
     }
 
