@@ -1,0 +1,46 @@
+com.application.base.app_base-jetified-annotation-experimental-1.3.0-0 C:\Users\Vaishnav\.gradle\caches\transforms-3\18e87908eada724926b52cb5779e48a5\transformed\jetified-annotation-experimental-1.3.0\res
+com.application.base.app_base-drawerlayout-1.1.1-1 C:\Users\Vaishnav\.gradle\caches\transforms-3\1a639748c51369a8ebd030ce6c50a01a\transformed\drawerlayout-1.1.1\res
+com.application.base.app_base-jetified-activity-ktx-1.8.0-2 C:\Users\Vaishnav\.gradle\caches\transforms-3\25a3e1933bd213c3d1ab8ca27d2fcba5\transformed\jetified-activity-ktx-1.8.0\res
+com.application.base.app_base-jetified-savedstate-ktx-1.2.1-3 C:\Users\Vaishnav\.gradle\caches\transforms-3\271266b7e6b7b35598eb050ac0fd5e34\transformed\jetified-savedstate-ktx-1.2.1\res
+com.application.base.app_base-jetified-lifecycle-livedata-ktx-2.6.2-4 C:\Users\Vaishnav\.gradle\caches\transforms-3\2a3bfcfefe4340bb826fb2f44b7bd06f\transformed\jetified-lifecycle-livedata-ktx-2.6.2\res
+com.application.base.app_base-jetified-savedstate-1.2.1-5 C:\Users\Vaishnav\.gradle\caches\transforms-3\2c34e38566a38a36ead5a1573467ca25\transformed\jetified-savedstate-1.2.1\res
+com.application.base.app_base-jetified-lifecycle-viewmodel-ktx-2.6.2-6 C:\Users\Vaishnav\.gradle\caches\transforms-3\2dae3e98f4c28656d935afdafea9c43c\transformed\jetified-lifecycle-viewmodel-ktx-2.6.2\res
+com.application.base.app_base-jetified-profileinstaller-1.3.0-7 C:\Users\Vaishnav\.gradle\caches\transforms-3\34265868bde73151693e167be6d69aa3\transformed\jetified-profileinstaller-1.3.0\res
+com.application.base.app_base-lifecycle-viewmodel-2.6.2-8 C:\Users\Vaishnav\.gradle\caches\transforms-3\4aa83bb2be0469639e246ce8e6eb868f\transformed\lifecycle-viewmodel-2.6.2\res
+com.application.base.app_base-material-1.10.0-9 C:\Users\Vaishnav\.gradle\caches\transforms-3\5b9bc5bd1fba1ec00dac2111829dea91\transformed\material-1.10.0\res
+com.application.base.app_base-coordinatorlayout-1.1.0-10 C:\Users\Vaishnav\.gradle\caches\transforms-3\608a81183c80fc8bf8055e733eac5946\transformed\coordinatorlayout-1.1.0\res
+com.application.base.app_base-slidingpanelayout-1.2.0-11 C:\Users\Vaishnav\.gradle\caches\transforms-3\631d3e6005b3ba08aa8c5eee009c72e8\transformed\slidingpanelayout-1.2.0\res
+com.application.base.app_base-cardview-1.0.0-12 C:\Users\Vaishnav\.gradle\caches\transforms-3\640ead27b8fe79f748e73b5d397efc29\transformed\cardview-1.0.0\res
+com.application.base.app_base-jetified-lifecycle-viewmodel-savedstate-2.6.2-13 C:\Users\Vaishnav\.gradle\caches\transforms-3\6b36572035e5284e997cc902058dbeda\transformed\jetified-lifecycle-viewmodel-savedstate-2.6.2\res
+com.application.base.app_base-jetified-lifecycle-service-2.6.2-14 C:\Users\Vaishnav\.gradle\caches\transforms-3\717181beb393ea8a87f34209f9d42c00\transformed\jetified-lifecycle-service-2.6.2\res
+com.application.base.app_base-jetified-appcompat-resources-1.6.1-15 C:\Users\Vaishnav\.gradle\caches\transforms-3\7234d398151e4bf87f5175c179b883c6\transformed\jetified-appcompat-resources-1.6.1\res
+com.application.base.app_base-jetified-preference-ktx-1.2.1-16 C:\Users\Vaishnav\.gradle\caches\transforms-3\730587b5bc35a55e17af1212e6a858fb\transformed\jetified-preference-ktx-1.2.1\res
+com.application.base.app_base-fragment-1.3.6-17 C:\Users\Vaishnav\.gradle\caches\transforms-3\775001d630c10bf0da5b7b69ed6cde40\transformed\fragment-1.3.6\res
+com.application.base.app_base-jetified-lifecycle-runtime-ktx-2.6.2-18 C:\Users\Vaishnav\.gradle\caches\transforms-3\812e1ce0a15c2d5f734cc613b49497bc\transformed\jetified-lifecycle-runtime-ktx-2.6.2\res
+com.application.base.app_base-constraintlayout-2.1.4-19 C:\Users\Vaishnav\.gradle\caches\transforms-3\893553c265928c916f9f08eca2f336a6\transformed\constraintlayout-2.1.4\res
+com.application.base.app_base-media-1.0.0-20 C:\Users\Vaishnav\.gradle\caches\transforms-3\8c7fa6a29b25356828ae0d49c750a6e0\transformed\media-1.0.0\res
+com.application.base.app_base-lifecycle-livedata-2.6.2-21 C:\Users\Vaishnav\.gradle\caches\transforms-3\8f0dde7157c71b95beb802d9b64537d3\transformed\lifecycle-livedata-2.6.2\res
+com.application.base.app_base-appcompat-1.6.1-22 C:\Users\Vaishnav\.gradle\caches\transforms-3\a904f7faf343339accaf421f9fb64b3b\transformed\appcompat-1.6.1\res
+com.application.base.app_base-lifecycle-livedata-core-2.6.2-23 C:\Users\Vaishnav\.gradle\caches\transforms-3\ad62d660ecbb24c7347e0f6b462f088e\transformed\lifecycle-livedata-core-2.6.2\res
+com.application.base.app_base-core-runtime-2.2.0-24 C:\Users\Vaishnav\.gradle\caches\transforms-3\aff07617a26f0c4d0a307832c39e4345\transformed\core-runtime-2.2.0\res
+com.application.base.app_base-preference-1.2.1-25 C:\Users\Vaishnav\.gradle\caches\transforms-3\b2facf9301757e03018c6f957d101b5f\transformed\preference-1.2.1\res
+com.application.base.app_base-recyclerview-1.1.0-26 C:\Users\Vaishnav\.gradle\caches\transforms-3\b7d4326e645068d278672e51259905be\transformed\recyclerview-1.1.0\res
+com.application.base.app_base-transition-1.4.1-27 C:\Users\Vaishnav\.gradle\caches\transforms-3\b8f49c1df8942376e7b237935d23026e\transformed\transition-1.4.1\res
+com.application.base.app_base-jetified-window-1.0.0-28 C:\Users\Vaishnav\.gradle\caches\transforms-3\bbf44daf27bddb2d2ef33acb0978f131\transformed\jetified-window-1.0.0\res
+com.application.base.app_base-jetified-viewpager2-1.0.0-29 C:\Users\Vaishnav\.gradle\caches\transforms-3\bee45555b0ee8aba366487c0b86172a5\transformed\jetified-viewpager2-1.0.0\res
+com.application.base.app_base-jetified-core-ktx-1.12.0-30 C:\Users\Vaishnav\.gradle\caches\transforms-3\c0ecc65503e2c599e49db8a2dc8aa30a\transformed\jetified-core-ktx-1.12.0\res
+com.application.base.app_base-jetified-lifecycle-livedata-core-ktx-2.6.2-31 C:\Users\Vaishnav\.gradle\caches\transforms-3\c97c6158c0dbca97f08dc39bc483a644\transformed\jetified-lifecycle-livedata-core-ktx-2.6.2\res
+com.application.base.app_base-jetified-emoji2-1.2.0-32 C:\Users\Vaishnav\.gradle\caches\transforms-3\d265f941638789cc3282977d8e70e6d6\transformed\jetified-emoji2-1.2.0\res
+com.application.base.app_base-core-1.12.0-33 C:\Users\Vaishnav\.gradle\caches\transforms-3\d89c924e66f10e072bbc062e0df56243\transformed\core-1.12.0\res
+com.application.base.app_base-jetified-emoji2-views-helper-1.2.0-34 C:\Users\Vaishnav\.gradle\caches\transforms-3\db36dbd69f7dfe6bbb3ea39779ebc046\transformed\jetified-emoji2-views-helper-1.2.0\res
+com.application.base.app_base-jetified-startup-runtime-1.1.1-35 C:\Users\Vaishnav\.gradle\caches\transforms-3\e6e796a114e90066709771021f5e9b9f\transformed\jetified-startup-runtime-1.1.1\res
+com.application.base.app_base-jetified-activity-1.8.0-36 C:\Users\Vaishnav\.gradle\caches\transforms-3\e9dde9da3f412c2af805655e87b4f0b9\transformed\jetified-activity-1.8.0\res
+com.application.base.app_base-jetified-lifecycle-process-2.6.2-37 C:\Users\Vaishnav\.gradle\caches\transforms-3\efce5a755cf024498213f3975f2fea69\transformed\jetified-lifecycle-process-2.6.2\res
+com.application.base.app_base-lifecycle-runtime-2.6.2-38 C:\Users\Vaishnav\.gradle\caches\transforms-3\f2de220ce929d8f2ec3c4c2a0a5d0561\transformed\lifecycle-runtime-2.6.2\res
+com.application.base.app_base-pngs-39 D:\AndroidProjects\App Base MVVM\app_base\build\generated\res\pngs\release
+com.application.base.app_base-resValues-40 D:\AndroidProjects\App Base MVVM\app_base\build\generated\res\resValues\release
+com.application.base.app_base-mergeReleaseResources-41 D:\AndroidProjects\App Base MVVM\app_base\build\intermediates\incremental\release\mergeReleaseResources\merged.dir
+com.application.base.app_base-mergeReleaseResources-42 D:\AndroidProjects\App Base MVVM\app_base\build\intermediates\incremental\release\mergeReleaseResources\stripped.dir
+com.application.base.app_base-merged_res-43 D:\AndroidProjects\App Base MVVM\app_base\build\intermediates\merged_res\release
+com.application.base.app_base-main-44 D:\AndroidProjects\App Base MVVM\app_base\src\main\res
+com.application.base.app_base-release-45 D:\AndroidProjects\App Base MVVM\app_base\src\release\res
