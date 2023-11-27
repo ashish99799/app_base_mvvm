@@ -1,0 +1,96 @@
+{
+  "gym_list": [
+    {
+      "id": 1,
+      "title": "Best Gym",
+      "date_time": "15/Jun/2021 10:05 AM",
+      "favorite": false,
+      "price": 45,
+      "rating": 4.5,
+      "image": "https://api.time.com/wp-content/uploads/2020/03/gym-coronavirus.jpg",
+      "popular_gym": [
+        {
+          "id": 1,
+          "title": "US Gym",
+          "description": "Address Best Gym",
+          "favorite": false,
+          "price": 25,
+          "rating": 4.5,
+          "location": "US",
+          "image": "https://static.toiimg.com/thumb/msid-83483048,imgsize-896783,width-800,height-600,resizemode-75/83483048.jpg"
+        },
+        {
+          "id": 2,
+          "title": "German Gym",
+          "description": "Address Best Gym",
+          "favorite": false,
+          "price": 50,
+          "rating": 3.0,
+          "location": "German",
+          "image": "https://images.moneycontrol.com/static-mcnews/2021/01/Gym-workout-India-770x433.jpg"
+        },
+        {
+          "id": 3,
+          "title": "Paris Gym",
+          "description": "Address Best Gym",
+          "favorite": false,
+          "price": 35,
+          "rating": 5.5,
+          "location": "Paris",
+          "image": "https://cdn.pttoday.co.uk/wp-content/uploads/2021/04/fitness-800x445.jpeg"
+        },
+        {
+          "id": 4,
+          "title": "Australia Gym",
+          "description": "Address Best Gym",
+          "favorite": false,
+          "price": 30,
+          "rating": 4.5,
+          "location": "Australia",
+          "image": "https://static2.bigstockphoto.com/3/8/1/large1500/183869797.jpg"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Osm Gym",
+      "date_time": "15/August/2021 10:05 AM",
+      "favorite": false,
+      "price": 40,
+      "rating": 5.5,
+      "image": "https://www.fnbbuzz.com/wp-content/uploads/2019/09/gym-owner.jpg",
+      "popular_gym": [
+        {
+          "id": 5,
+          "title": "Burlington Gym",
+          "description": "Address Osm Gym",
+          "favorite": false,
+          "price": 38,
+          "rating": 5.5,
+          "location": "Burlington",
+          "image": "https://cdn.pttoday.co.uk/wp-content/uploads/2021/04/fitness-800x445.jpeg"
+        },
+        {
+          "id": 6,
+          "title": "Tokyo Gym",
+          "description": "Address Osm Gym",
+          "favorite": false,
+          "price": 47,
+          "rating": 4.5,
+          "location": "Tokyo",
+          "image": "https://static2.bigstockphoto.com/3/8/1/large1500/183869797.jpg"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "title": "Hybrid Gym",
+      "date_time": "15/July/2021 10:05 AM",
+      "favorite": false,
+      "price": 55,
+      "rating": 4.5,
+      "image": "https://www.fnbbuzz.com/wp-content/uploads/2019/09/gym-owner.jpg",
+      "popular_gym": []
+    }
+  ]
+}

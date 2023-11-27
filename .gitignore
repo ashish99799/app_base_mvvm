@@ -270,4 +270,3 @@ obj/
 !/gradle/wrapper/gradle-wrapper.jar
 
 # End of https://www.gitignore.io/api/java,kotlin,windows,intellij,androidstudio
-/github.properties

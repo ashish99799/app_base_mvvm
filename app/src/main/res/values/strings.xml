@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">Github Users</string>
+
+    <string name="please_click_back_again_to_exit">Please click BACK again to exit</string>
+    <string name="no_connection">No internet Connection</string>
+    <string name="turn_on_connection">Please turn on internet connection to continue</string>
+    <string name="dialog_ok">Ok</string>
+    <string name="are_you_sure_you_want_to_logout">Are you sure you want to logout!</string>
+    <string name="dialog_yes">Yes</string>
+    <string name="dialog_no">No</string>
+    <string name="alert">Alert</string>
+    <string name="internal_server_error">Internal Server error</string>
+    <string name="page_not_found">Page not found</string>
+    <string name="msg_no_internet">Internet connection not found. Please check your connection.</string>
+    <string name="choose_your_option">Choose your option!</string>
+    <string name="permission_required">Permission Required</string>
+    <string name="need_permissions">Need Permissions</string>
+    <string name="app_need_to_permissions">App Need to permissions \n Goto App Setting and Allow Permission All of them</string>
+    <string name="app_setting">App Setting</string>
+    <string name="go_to_permissions">Go to Permissions to Grant All Permission</string>
+    <string name="unable_to_get_permission">Unable to get Permission</string>
+    <string name="repo_name">Repo Name</string>
+    <string name="forks">Forks</string>
+    <string name="stars">Stars</string>
+    <string name="user_name">User Name</string>
+    <string name="recommended_gym">Recommended Gym</string>
+    <string name="popular_gym">Popular Gym</string>
+    <string name="sports">Sports</string>
+    <string name="days">/Days</string>
+
+    <!-- For Blank Space &#160; -->
+
+</resources>
