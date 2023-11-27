@@ -29,12 +29,12 @@ android {
     }
 
     compileOptions {
-        sourceCompatibility = JavaVersion.VERSION_1_8
-        targetCompatibility = JavaVersion.VERSION_1_8
+        sourceCompatibility = JavaVersion.VERSION_11
+        targetCompatibility = JavaVersion.VERSION_11
     }
 
     kotlinOptions {
-        jvmTarget = JavaVersion.VERSION_1_8.toString()
+        jvmTarget = JavaVersion.VERSION_11.toString()
     }
 
     lint {
@@ -52,13 +52,13 @@ android {
 
 java {
     toolchain {
-        languageVersion.set(JavaLanguageVersion.of(17))        // << --- ADD This
+        languageVersion.set(JavaLanguageVersion.of(11))        // << --- ADD This
     }
 }
 
 java {
-    sourceCompatibility = JavaVersion.VERSION_17            // << --- ADD This
-    targetCompatibility = JavaVersion.VERSION_17
+    sourceCompatibility = JavaVersion.VERSION_11            // << --- ADD This
+    targetCompatibility = JavaVersion.VERSION_11
 }
 
 dependencies {
@@ -89,6 +89,7 @@ dependencies {
     implementation("io.reactivex.rxjava2:rxandroid:2.1.1")
 
     implementation("com.google.firebase:firebase-crashlytics-buildtools:2.9.9")
+    implementation("com.google.guava:guava:32.1.3-android")
 
     // Android Test
     testImplementation("junit:junit:4.13.2")
