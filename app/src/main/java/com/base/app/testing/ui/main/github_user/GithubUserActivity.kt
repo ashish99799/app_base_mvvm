@@ -62,6 +62,10 @@ class GithubUserActivity : AppBaseActivity<ActivityGithubUserBinding, GithubUser
 
     }
 
+    override fun onAppBackPressed() {
+        finish()
+    }
+
     @SuppressLint("SimpleDateFormat")
     private fun getUserInfo() {
         viewModel.onUserInfo((rowData!!.login ?: "")) { it, data ->

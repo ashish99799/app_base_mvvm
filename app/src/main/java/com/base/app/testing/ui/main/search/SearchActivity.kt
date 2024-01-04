@@ -54,6 +54,10 @@ class SearchActivity : AppBaseActivity<ActivitySearchBinding, SearchViewModel>()
         }
     }
 
+    override fun onAppBackPressed() {
+        finish()
+    }
+
     override fun onClick(view: View) {
         when (view.id) {
             androidx.appcompat.R.id.search_close_btn -> {

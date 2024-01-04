@@ -1,10 +1,13 @@
 package com.application.base
 
 import android.content.Context
+import android.os.Build
 import android.os.Bundle
 import android.view.View
 import android.view.WindowManager
 import android.view.inputmethod.InputMethodManager
+import android.window.OnBackInvokedDispatcher
+import androidx.activity.OnBackPressedCallback
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.ViewModelProvider
 import androidx.viewbinding.ViewBinding
@@ -20,6 +23,7 @@ abstract class AppBaseActivity<VB : ViewBinding, VM : AppBaseViewModel>(private 
 
     abstract fun initView()
     abstract fun initOnClick()
+    abstract fun onAppBackPressed()
 
     protected val activityLauncherKt = AppBaseActivityResultKt.registerActivityForResult(this)
     /*
@@ -62,6 +66,18 @@ abstract class AppBaseActivity<VB : ViewBinding, VM : AppBaseViewModel>(private 
         viewModel = ViewModelProvider(this)[setViewModel()::class.java]
         initView()
         initOnClick()
+
+        if (Build.VERSION.SDK_INT >= 33) {
+            onBackInvokedDispatcher.registerOnBackInvokedCallback(OnBackInvokedDispatcher.PRIORITY_DEFAULT) { onAppBackPressed() }
+        } else {
+            onBackPressedDispatcher.addCallback(this, onBackPressedCallback)
+        }
+    }
+
+    private val onBackPressedCallback = object : OnBackPressedCallback(true) {
+        override fun handleOnBackPressed() {
+            onAppBackPressed()
+        }
     }
 
     fun hideKeyboard(mView: View? = null) {
@@ -71,7 +87,7 @@ abstract class AppBaseActivity<VB : ViewBinding, VM : AppBaseViewModel>(private 
     }
 
     fun showKeyboard(mView: View? = null) {
-        var view = ((mView ?: currentFocus))
+        val view = ((mView ?: currentFocus))
         if (view != null) {
             val inputMethodManager = getSystemService(INPUT_METHOD_SERVICE) as InputMethodManager
             inputMethodManager.toggleSoftInputFromWindow(view.windowToken, InputMethodManager.SHOW_FORCED, 0)

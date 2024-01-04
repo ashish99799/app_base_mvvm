@@ -41,6 +41,10 @@ class SplashScreenActivity : AppBaseActivity<ActivitySplashScreenBinding, Splash
 
     }
 
+    override fun onAppBackPressed() {
+        finish()
+    }
+
     private val runnable = Runnable {
         startActivity(intentFor<DashboardActivity>().clearTask().newTask())
         overridePendingTransition(R.anim.fade_in, R.anim.fade_out)

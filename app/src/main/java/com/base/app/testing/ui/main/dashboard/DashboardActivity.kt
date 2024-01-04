@@ -95,6 +95,10 @@ class DashboardActivity : AppBaseActivity<ActivityDashboardBinding, DashboardAct
         })
     }
 
+    override fun onAppBackPressed() {
+        finish()
+    }
+
     override fun onClick(view: View) {
         when (view.id) {
             R.id.fabGithub -> {

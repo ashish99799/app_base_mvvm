@@ -2,11 +2,14 @@ package com.application.base
 
 import android.app.Activity
 import android.content.Context
+import android.os.Build
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.view.inputmethod.InputMethodManager
+import android.window.OnBackInvokedDispatcher
+import androidx.activity.OnBackPressedCallback
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
@@ -25,6 +28,10 @@ abstract class AppBaseFragment<VB : ViewBinding, VM : AppBaseViewModel>(private 
 
     lateinit var viewModel: VM
     abstract fun getViewModelClass(): VM
+
+    abstract fun initViewCreated()
+    abstract fun initOnClick()
+    abstract fun onAppBackPressed()
 
     private val disposableContainer = CompositeDisposable()
 
@@ -54,6 +61,18 @@ abstract class AppBaseFragment<VB : ViewBinding, VM : AppBaseViewModel>(private 
         setHasOptionsMenu(false)
         mContext = requireContext()
         mActivity = requireActivity()
+
+        if (Build.VERSION.SDK_INT >= 33) {
+            requireActivity().onBackInvokedDispatcher.registerOnBackInvokedCallback(OnBackInvokedDispatcher.PRIORITY_DEFAULT) { onAppBackPressed() }
+        } else {
+            requireActivity().onBackPressedDispatcher.addCallback(this, onBackPressedCallback)
+        }
+    }
+
+    private val onBackPressedCallback = object : OnBackPressedCallback(true) {
+        override fun handleOnBackPressed() {
+            onAppBackPressed()
+        }
     }
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View {
@@ -64,15 +83,9 @@ abstract class AppBaseFragment<VB : ViewBinding, VM : AppBaseViewModel>(private 
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        setUpViews()
-        observeData()
+        initViewCreated()
+        initOnClick()
     }
-
-    open fun setUpViews() {}
-
-    open fun observeView() {}
-
-    open fun observeData() {}
 
     override fun onAttach(context: Context) {
         super.onAttach(context)
